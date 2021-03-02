@@ -23,7 +23,7 @@ Once you have your Swift package set up, adding InputBarAccessoryView as a depen
 
 ```
 dependencies: [
-    .package(url: "https://github.com/nathantannar4/InputBarAccessoryView.git", .upToNextMajor(from: "4.5.0"))
+    .package(url: "https://github.com/nathantannar4/InputBarAccessoryView.git", .upToNextMajor(from: "5.2.0"))
 ]
 ```
 You can also add it via XCode SPM editor with URL:
@@ -94,11 +94,15 @@ Add your app to the list of apps using this library and make a pull request.
 iMessage style [TypingIndicator](https://github.com/nathantannar4/TypingIndicator) for chat apps
 
 ## Latest Releases
+5.2.3
+   - Fixed appendSpaceOnCompletion inserting space at wrong location
+
 5.2.2
    - Added an optional offset in KeyboardManager.bind(tableView:)
    - Change reuseIdentifier from `public` to `open` to allow inheritance
    - Fix send button loading indicator for dark mode
    - Fix iOS 14 UIPasteboard system notification with images
+
 5.2.0
    - Drop support for iOS 11 and bump minimum version to iOS 12+
    - Support Swift 5.3 and higher for XCode 12
